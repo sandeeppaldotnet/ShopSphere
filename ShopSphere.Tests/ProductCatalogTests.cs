@@ -17,7 +17,7 @@ namespace ShopSphere.Tests
             // Act
             var products = catalog.GetAll();
 
-            // Assert
+            // Assert 1
             Assert.NotEmpty(products);
             Assert.Equal(3, products.Count);
         }
