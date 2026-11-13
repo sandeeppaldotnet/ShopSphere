@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="ShopSphere.Api/ShopSphere.Api.csproj" />
   <Project Path="ShopSphere.Tests/ShopSphere.Tests.csproj" />
 </Solution>
