@@ -19,8 +19,8 @@ namespace ShopSphere.Tests
 
             // Assert 123
             Assert.NotEmpty(products);
-            Assert.Equal(3, products.Count);
-           // Assert.Equal(10, products.Count);
+           // Assert.Equal(3, products.Count);
+            Assert.Equal(10, products.Count);
         }
 
         [Fact]
