@@ -20,6 +20,16 @@ app.MapSwaggerUI();
 
 app.UseHttpsRedirection();
 // Health endpoint
+
+app.MapGet("/api/toolliyo", () =>
+{
+    return Results.Ok(new
+    {
+        status = "Healthy",
+        message = "Toolliyo API is running."
+    });
+});
+
 app.MapGet("/api/health", () =>
 {
     return Results.Ok(new
@@ -28,6 +38,7 @@ app.MapGet("/api/health", () =>
         message = "ShopSphere API is running."
     });
 });
+
 
 // Get all products
 app.MapGet("/api/products", (ProductCatalog catalog) =>
